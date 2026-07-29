@@ -13,3 +13,7 @@ cmake-build-*/
 .idea/
 *.swp
 *.swo
+
+# Тесты
+.pytest_cache/
+__pycache__/

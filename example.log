@@ -1,0 +1,10 @@
+2026-07-29 22:40:38 INFO Hello World
+2026-07-29 22:40:42 ERROR Error test
+2026-07-29 22:45:10 INFO Starting application
+2026-07-29 22:45:15 DEBUG Debug message - detailed info
+2026-07-29 22:45:20 ERROR Connection failed to database
+2026-07-29 22:45:25 INFO User logged in: admin
+2026-07-29 22:45:30 ERROR File not found: config.ini
+2026-07-29 22:45:35 INFO Operation completed successfully
+2026-07-29 22:45:40 DEBUG Cache cleared
+2026-07-29 22:45:45 ERROR Timeout while processing request
