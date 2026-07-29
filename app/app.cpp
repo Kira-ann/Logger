@@ -66,12 +66,20 @@ int main(int argc, char* argv[]){
         std::string line;
         
         if (!std::getline(std::cin, line)) { // EOF или ошибка — выходим
-            stopFlag = true;
+            {
+                std::lock_guard<std::mutex> lock(queueMutex);
+                stopFlag = true;
+            }
+            cv.notify_all();
             break;
         }
 
         if (line == "exit") {
-            stopFlag = true;
+            {
+                std::lock_guard<std::mutex> lock(queueMutex);
+                stopFlag = true;
+            }
+            cv.notify_all();
             break;
         }
 
