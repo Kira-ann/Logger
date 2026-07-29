@@ -95,3 +95,10 @@ cat log.txt
 2026-07-29 19:29:14 INFO Hello, World!
 2026-07-29 19:29:20 ERROR Error message
 ```
+
+## Тесты (выполняются отдельно)
+Для запуска тестов требуется Python и установленный `pytest`.
+```bash
+pip install pytest
+pytest Tests/
+```
