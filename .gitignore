@@ -1,0 +1,15 @@
+# Сборка
+build/
+cmake-build-*/
+*.o
+*.a
+*.so
+*.dll
+*.exe
+*.out
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
