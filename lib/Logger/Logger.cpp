@@ -17,9 +17,10 @@ Logger::Logger(LogLevel input_level, std::string filename, bool input_append){
                 auto level = result.value().level;
                 auto text = result.value().text;
                 file_ << "[" << time << "] [" << toString(level)  << "] " << text << '\n';
+                file_.flush();
             }
             else {break;}
-        } file_.flush();
+        } 
     });
 }
 
